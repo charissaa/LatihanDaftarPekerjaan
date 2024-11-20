@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/namaTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tanggalTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/namaTask"
+        app:layout_constraintStart_toStartOf="@id/namaTask"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/kategoriTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tanggalTask"
+        app:layout_constraintStart_toStartOf="@id/tanggalTask"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/deskripsiTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/kategoriTask"
+        app:layout_constraintStart_toStartOf="@id/kategoriTask"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/namaTask"
+        app:layout_constraintBottom_toBottomOf="@id/deskripsiTask"
+        android:src="@drawable/baseline_arrow_downward_24"/>
+    
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/deskripsiTask"
+        app:layout_constraintStart_toStartOf="@id/deskripsiTask"
+        android:layout_marginTop="15dp"
+        android:textSize="13sp"
+        android:text="HAPUS"/>
+
+    <Button
+        android:id="@+id/btnUbah"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnHapus"
+        app:layout_constraintStart_toEndOf="@id/btnHapus"
+        app:layout_constraintEnd_toStartOf="@id/btnKerjakan"
+        android:textSize="13sp"
+        android:text="UBAH"/>
+
+    <Button
+        android:id="@+id/btnKerjakan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnUbah"
+        app:layout_constraintEnd_toEndOf="@id/iv1"
+        android:textSize="12sp"
+        android:text="KERJAKAN"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

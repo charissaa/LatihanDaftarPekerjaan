@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Nama Task"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/namaTask"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toTopOf="@id/tv1"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        android:layout_marginStart="40dp"
+        android:background="#dbdbdb"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginTop="35dp"
+        android:text="Tanggal"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/tanggalTask"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/namaTask"
+        app:layout_constraintTop_toTopOf="@id/tv2"
+        app:layout_constraintBottom_toBottomOf="@id/tv2"
+        android:background="#dbdbdb"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:layout_marginTop="35dp"
+        android:text="Kategori"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/kategoriTask"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/tanggalTask"
+        app:layout_constraintTop_toTopOf="@id/tv3"
+        app:layout_constraintBottom_toBottomOf="@id/tv3"
+        android:background="#dbdbdb"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        android:layout_marginTop="35dp"
+        android:text="Deskripsi"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/deskripsiTask"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        app:layout_constraintStart_toStartOf="@id/tv4"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        android:layout_marginTop="10dp"
+        android:background="#dbdbdb"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/deskripsiTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="SIMPAN"
+        android:textSize="22sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

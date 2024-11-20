@@ -17,4 +17,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+//    private var _nama = Array<String>
+//    private var _tanggal = Array<String>
+//    private var _kategori = Array<String>
+//    private var _deskripsi = Array<String>
+
+    private var arTask = arrayListOf<task>()
 }

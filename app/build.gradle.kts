@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.c14220188.latihandaftarpekerjaan"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.c14220188.latihandaftarpekerjaan"
         minSdk = 34
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

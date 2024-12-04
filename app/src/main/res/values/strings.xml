@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">LatihanDaftarPekerjaan</string>
+
+    <string-array name="namaTask">
+        <item>Matematika</item>
+    </string-array>
+    <string-array name="tanggalTask">
+        <item>5 Desember 2024</item>
+    </string-array>
+    <string-array name="kategoriTask">
+        <item>PR</item>
+    </string-array>
+    <string-array name="deskripsiTask">
+        <item>PR materi penjumlahan</item>
+    </string-array>
 </resources>

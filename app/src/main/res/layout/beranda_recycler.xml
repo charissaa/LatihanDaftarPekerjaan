@@ -12,7 +12,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"/>
 
     <TextView
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toBottomOf="@id/namaTask"
         app:layout_constraintStart_toStartOf="@id/namaTask"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
@@ -42,8 +43,7 @@
         app:layout_constraintTop_toBottomOf="@id/kategoriTask"
         app:layout_constraintStart_toStartOf="@id/kategoriTask"
         android:layout_marginTop="10dp"
-        android:textSize="13sp"
-        android:textStyle="bold"/>
+        android:textSize="13sp"/>
 
     <ImageView
         android:id="@+id/iv1"
